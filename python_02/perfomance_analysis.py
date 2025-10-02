@@ -207,7 +207,7 @@ def main():
     )
     plot_queue_comparison(sizes_q, list_q_times, deque_times)
 
-    print("\nГрафики сохранены. Проверь файлы: insertion_comparison.png, "
+    print("\nГрафики сохранены. файлы: insertion_comparison.png, "
           "insert_end_comparison.png, queue_comparison.png")
 
 
