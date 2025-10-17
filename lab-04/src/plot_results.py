@@ -13,6 +13,14 @@ if not os.path.exists(RESULTS_PATH):
 
 # --- Загрузка ---
 df = pd.read_csv(RESULTS_PATH)
+print("=== DEBUG ===")
+print("Столбцы:", df.columns.tolist())
+print("Размер таблицы:", df.shape)
+print(df.head(10))
+print("Уникальные алгоритмы:", df["Algorithm"].unique())
+print("Уникальные типы данных:", df["DataType"].unique())
+print("================")
+
 
 # --- Создание отчётной папки ---
 os.makedirs(REPORT_DIR, exist_ok=True)
@@ -55,7 +63,7 @@ plt.savefig(mem_size_path)
 plt.close()
 
 # --- 3. Время vs Тип данных (для фиксированного n=5000) ---
-fixed_size = 5000
+fixed_size = 1000
 subset2 = df[df["Size"] == fixed_size]
 
 plt.figure(figsize=(10, 6))
