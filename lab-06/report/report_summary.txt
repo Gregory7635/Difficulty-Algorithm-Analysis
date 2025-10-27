@@ -1,0 +1,18 @@
+BST performance experiment
+==========================
+
+Sizes: [1000, 2000, 5000, 10000, 20000]
+Num searches per size: 1000
+
+Machine info:
+  platform: Windows-10-10.0.22631-SP0
+  processor: Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
+  python: 3.11.9
+
+Results (average search time in seconds):
+n	balanced	degenerate
+1000	4.898000007e-07	2.652490000e-05
+2000	6.113999989e-07	5.401470000e-05
+5000	7.518999992e-07	1.338384000e-04
+10000	6.899999971e-07	2.637786000e-04
+20000	7.819999992e-07	5.176912000e-04
